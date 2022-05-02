@@ -1,0 +1,20 @@
+{
+  "edit":"Edit",
+  "instatus":"Inventory Status",
+  "instatistic":"Inventory Statistics",
+  "name":"Name",
+  "gtipcode":"GTIP Code",
+  "protype":"Product Type",
+  "parent":"Parent",
+  "about":"About",
+  "ordercount":"Order Count",
+  "passtime":"passing time",
+  "piecesleft":"pieces left",
+  "sold":"Sold",
+  "soldplace":"Sold Place",
+  "barcode":"Barcode",
+  "companyname":"Company Name",
+  "privatekey":"Private KEY",
+  "create":"Create"
+
+}

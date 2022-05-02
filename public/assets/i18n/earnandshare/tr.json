@@ -1,0 +1,17 @@
+{
+"condition": "Durum",
+"earning": "Kazanç",
+"balance": "Bakiye",
+"usage": "İşlem",
+"days":"gün",
+"row1": "Referans bağlantısı ile kaydolan bir arkadaşın ilk gönderisinde",
+  "row2":"Üye olan bir arkadaşın her gönderiminde referans linki ile",
+  "row3":"kargo ikramiyesi",
+  "row4":"kargo bakiyesi",
+  "row5":"Referans bağlantısı ile kaydolan bir arkadaşın ilk gönderisinde",
+  "row6":"2 ay boyunca her hafta",
+  "row7":"arkadaşınız ilk gönderiyi yaptığında hem sizin hem de arkadaşınız için kargo bakiyesi",
+  "row8":"Kayıt olduktan sonra arkadaşınızın gönderilerinden kargo ücreti üzerinden %2,5 kargo bakiyesi",
+  "row9":"",
+  "row10":""
+}

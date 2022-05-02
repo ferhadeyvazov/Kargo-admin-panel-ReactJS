@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+
+.lists{
+    display: flex;
+    flex-direction: column;
+width: 473px;
+height: 333px;
+box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+border-radius: 15px;
+position: absolute;
+background-color: #ffffff;
+z-index: 9999;
+left: 50%;
+transform: translateX(-50%);
+}
+.lists .logo{
+    width: 29px;
+    height: 29px;
+    background-color: #00D2FF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 27px 22px;
+}
+/* .logo .icons{
+    width: 12.27px;
+    height: 11.15px;
+} */
+.list_1, .list_name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 17px;
+    padding-right: 50.6px;
+}
+.list_1{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+    border: 1px solid rgba(71, 197, 255, 0.15);
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff;
+}
+.list_1:nth-child(2){
+    margin: 16px 0;
+}
+
+.listnames{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+.list_name .list_logo{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background-color: #00D2FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 11px;
+}
+.list_name button{
+border: none;
+background-color: #ffffff;
+cursor: pointer;
+}
+.list_name button h3{
+    color:#405982;
+}
+@media screen and (max-width: 600px) {
+    .lists{
+        padding: 0 10px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .listnames{
+        align-items: stretch;
+
+    }
+    .list_1{
+        padding: 0.5rem 0.2rem;
+    }
+
+    
+}

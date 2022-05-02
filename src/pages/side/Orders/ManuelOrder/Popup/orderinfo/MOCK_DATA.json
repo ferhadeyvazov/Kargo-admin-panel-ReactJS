@@ -1,0 +1,16 @@
+[
+    {
+        "skucode": 1,
+        "product": "Monitor",
+        "stock": 5,
+        "weight": 8,
+        "gtipcode": 4
+    },
+    {
+        "sku_code": 4,
+        "product": "Mouse",
+        "stock": 5,
+        "weight": 10,
+        "gtipcode": 9
+    }
+]

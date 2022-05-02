@@ -1,0 +1,100 @@
+@import '../../../../../globall';
+
+.bank_hesab_bilgileri_container {
+    border: none !important;
+    min-height: auto !important;
+    padding-bottom: 2rem;
+
+    .bank_hesab_bilgileri_title {
+        color: rgba(42, 92, 185, 1);
+        width: 100%;
+        max-width: 70%; //840px
+        background: linear-gradient(90.11deg, #F5F5F5 -8.12%, #DCE2E6 54.44%, #F5F5F5 90.34%);
+        padding-bottom: 13px;
+        padding-top: 13px;
+        text-align: center;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        font-weight: 500;
+        position: relative;
+        top: -2px;
+
+        @media(max-width:600px) {
+            //styles go here
+            max-width: 50%; //840px
+            font-size: 12px;
+        }
+
+        @media(max-width:450px) {
+            font-size: 10px;
+        }
+
+    }
+
+    .bank_kur_farklari {
+        max-width: 80%; //967px
+        width: 100%;
+        background: #6BB79B;
+        border-radius: 5px;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 29px;
+        margin-bottom: 51px;
+        padding: 18px 0px;
+
+        @media(max-width:1200px) {
+            padding: 10px 19px;
+        }
+
+        @media(max-width:600px) {
+            font-size: 10px;
+        }
+
+        @media(max-width:450px) {
+            max-width: 95%; //967px
+        }
+    }
+
+    .banka_bilgileri {
+        max-width: 80%;
+        width: 100%;
+
+
+
+        .banka_adi {
+            padding-bottom: 21px;
+
+            @media(max-width:600px) {
+                //styles go here
+                font-size: 12px;
+
+            }
+
+            @media(max-width:450px) {
+                font-size: 10px;
+            }
+
+        }
+
+        p {
+            color: rgba(71, 96, 136, 1);
+
+            @media(max-width:600px) {
+                //styles go here
+                font-size: 12px;
+            }
+
+            @media(max-width:450px) {
+                font-size: 10px;
+            }
+        }
+
+    }
+
+
+
+
+
+}

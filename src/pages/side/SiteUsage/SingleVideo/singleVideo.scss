@@ -1,0 +1,31 @@
+  .container {
+      .site-usage-video {
+          .video-description {
+              h4 {
+                  font-family: Roboto;
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 20px;
+                  line-height: 23px;
+                  text-align: center;
+                  color: #3B69E4;
+                  margin-bottom: 30px;
+              }
+          }
+
+          .cargo-video {
+              width: 100%;
+              height: 630px;
+              background-color: #fff;
+              border-radius: 5px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              video {
+                  width: 70%;
+                  height: 60%;
+              }
+          }
+      }
+  }

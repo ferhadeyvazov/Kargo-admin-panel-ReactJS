@@ -1,0 +1,16 @@
+{
+  "main-menu": "",
+  "balance-system": "bakiye-sistemi",
+  "orders": "sifarisler",
+  "courier-request": "kurye-talepet",
+  "stock": "depo",
+  "invocies": "faturalar",
+  "site-usage": "site-kullanimi",
+  "buy-for-me": "satin-al",
+  "share-and-earn": "paylas-ve-kazan",
+  "inventory": "envanter",
+  "cargo-companies": "kargo-sirketler",
+  "get-special-offer": "ozel-teklif-al",
+  "parachute-integrations": "parasut-entegrasyonlari",
+  "marketplace-integration": "pazaryeri-entegrasyonu"
+}

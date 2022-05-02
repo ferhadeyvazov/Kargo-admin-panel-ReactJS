@@ -1,0 +1,79 @@
+.manuel_order {
+    background-color: transparent !important;
+
+
+    .order_buttons {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        padding-right: 1rem;
+
+        @media(max-width:1100px) {
+            //styles go here
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media(max-width:650px) {
+            //styles go here
+
+        }
+
+        button {
+            background: linear-gradient(#6a89e7 0%, #66abe7 100%);
+            ;
+            color: white;
+            font-weight: 500;
+            padding: 0.75rem 1.1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transform: scale(1);
+            transition: .5s ease;
+
+            @media(max-width:1100px) {
+                //styles go here
+                margin-bottom: 1rem;
+
+            }
+
+            @media(max-width:700px) {
+                //styles go here
+                padding: 0.55rem .85rem;
+                font-size: 11px;
+            }
+
+            @media(max-width:450px) {
+                //styles go here
+                width: 30%;
+                font-size: 10px;
+            }
+
+            @media(max-width:400px) {
+                //styles go here
+                padding: .75rem 1.2rem;
+                width: auto;
+
+            }
+
+            &:hover {
+                background: linear-gradient(#637dca 0%, #7ab6eb 100%);
+                ;
+                transform: scale(1.1);
+                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            }
+
+            &.active {
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+                    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+                transform: scale(1.15);
+                font-weight: 600;
+                background: #2874ff;
+            }
+        }
+    }
+}

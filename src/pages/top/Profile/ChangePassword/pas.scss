@@ -1,0 +1,165 @@
+  .profile_container {
+    //   border: 1px solid green;
+
+      .profile_title {
+          padding: 20px 40px;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+          display: flex;
+          justify-content: space-between;
+
+          @media (max-width: 800px) {
+              margin-bottom: -2rem;
+          }
+
+          .left {
+              color: rgba(64, 89, 130, 1);
+              font-weight: 500;
+              font-size: 21px;
+              display: flex;
+              align-items: center;
+
+              @media (max-width: 400px) {
+                  font-size: 12px;
+              }
+
+              img {
+                  margin-right: 1rem;
+
+              }
+          }
+
+          .right {
+              img {
+                  cursor: pointer;
+              }
+          }
+      }
+
+      // !  diger profile body ler hamsi heresi oz yerndedi  Mesela change pass body myprofile body
+
+
+      .profile_body.last-create {
+          padding-top: 3rem;
+
+          @media (max-width: 400px) {
+              border: none;
+              padding: 5px;
+              padding-top: 20px;
+
+          }
+
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          .address-groups {
+              width: 95%;
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              column-gap: 38px;
+
+              // align-content: center;
+              // justify-items: center;
+
+              @media (max-width: 800px) {
+                  grid-template-columns: 1fr;
+              }
+
+              @media (max-width: 400px) {
+                  width: 95%;
+              }
+
+              .address-group {
+                  margin-bottom: 10px;
+
+                  input::-webkit-outer-spin-button,
+                  input::-webkit-inner-spin-button {
+                      -webkit-appearance: none;
+                      margin: 0;
+                  }
+
+
+                  label {
+                      font-family: Roboto;
+                      font-style: normal;
+                      font-weight: normal;
+                      font-size: 16px;
+                      line-height: 19px;
+                      color: #405982;
+                      margin-bottom: 10px;
+
+                      @media (max-width: 400px) {
+                          font-size: 12px;
+                          // background-color: red;
+                      }
+
+                      span {
+                          color: red;
+                      }
+                  }
+
+                  input {
+                      width: 100%;
+                      height: 34px;
+                      border: 1px solid rgba(0, 0, 0, 0.3);
+                      box-sizing: border-box;
+                      border-radius: 5px;
+                      margin-top: 10px;
+                      outline: none;
+                      padding: 0 10px;
+
+                      &::placeholder {
+                          color: #d9d9d9;
+                      }
+                  }
+              }
+          }
+
+          .btn {
+              width: 95%;
+              display: flex;
+              justify-content: flex-end;
+              padding: 30px 0 40px 0;
+
+              @media (max-width: 400px) {
+                  justify-content: center;
+              }
+
+              button {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  padding: 13px 23px;
+                  outline: none;
+                  border: none;
+                  color: #fff;
+                  cursor: pointer;
+                  border-radius: 5px;
+                  background: #21E7C3;
+                  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+                  border-radius: 5px;
+
+                  @media (max-width: 400px) {
+                      padding: 8px 13px;
+                  }
+
+                  p {
+                      font-size: 16px;
+                      font-family: 'Roboto', sans-serif;
+                      font-weight: 400;
+
+                      @media (max-width: 400px) {
+                          font-size: 12px;
+                      }
+                  }
+
+                  i {
+                      margin-right: 7px;
+                      font-weight: 700;
+                  }
+              }
+          }
+      }
+  }

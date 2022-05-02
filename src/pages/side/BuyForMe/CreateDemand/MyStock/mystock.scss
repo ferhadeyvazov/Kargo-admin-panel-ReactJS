@@ -1,0 +1,292 @@
+.customer-info {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+
+  .customer-info-content {
+    padding: 30px 45px;
+    width: 100%;
+    height: auto;
+
+    @media (max-width: 660px) {
+      padding: 30px 10px;
+    }
+
+    .address-groups {
+      .address-group {
+        margin-bottom: 10px;
+
+        // width: 30%;
+        label {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 19px;
+          color: #405982;
+          margin-bottom: 10px;
+
+          span {
+            color: red;
+          }
+        }
+
+        select {
+          width: 100%;
+          height: 34px;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          box-sizing: border-box;
+          border-radius: 5px;
+          margin-top: 10px;
+          outline: none;
+          color: #d9d9d9;
+          padding: 0 10px;
+        }
+
+        input {
+          width: 100%;
+          height: 34px;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          box-sizing: border-box;
+          border-radius: 5px;
+          margin-top: 10px;
+          outline: none;
+          padding: 0 10px;
+
+          &::placeholder {
+            color: #d9d9d9;
+          }
+        }
+      }
+    }
+
+
+    // .customer-info-top {
+    //   padding-bottom: 30px;
+    //   border-bottom: 1px solid #ccc;
+
+    //   select {
+    //     width: 225px;
+    //     height: 37px;
+    //     border: 2px solid #47c5ff;
+    //     box-sizing: border-box;
+    //     border-radius: 5px;
+    //     color: #47c5ff;
+    //     font-size: 16px;
+
+    //     @media (max-width: 400px) {
+    //       width: 190px;
+    //       font-size: 13px;
+    //     }
+    //   }
+    // }
+
+    // .customer-info-bottom {
+    //   width: 100%;
+    //   padding-top: 30px;
+    //   display: grid;
+    //   grid-template-columns: 1fr 1fr;
+    //   column-gap: 38px;
+
+    //   // justify-content: space-between;
+    //   .address-info {
+    //     width: 100%;
+
+    //     .address-info-head {
+    //       h1 {
+    //         font-family: Roboto;
+    //         font-style: normal;
+    //         font-weight: 500;
+    //         font-size: 21px;
+    //         line-height: 25px;
+    //         color: #405982;
+    //         margin-bottom: 20px;
+
+    //         @media (max-width: 400px) {
+    //           font-size: 15px;
+    //         }
+    //       }
+    //     }
+
+    //     .address-groups {
+    //       .address-group {
+    //         margin-bottom: 10px;
+
+    //         // width: 30%;
+    //         label {
+    //           font-family: Roboto;
+    //           font-style: normal;
+    //           font-weight: normal;
+    //           font-size: 16px;
+    //           line-height: 19px;
+    //           color: #405982;
+    //           margin-bottom: 10px;
+
+    //           span {
+    //             color: red;
+    //           }
+    //         }
+
+    //         select {
+    //           width: 100%;
+    //           height: 34px;
+    //           border: 1px solid rgba(0, 0, 0, 0.3);
+    //           box-sizing: border-box;
+    //           border-radius: 5px;
+    //           margin-top: 10px;
+    //           outline: none;
+    //           color: #d9d9d9;
+    //           padding: 0 10px;
+    //         }
+
+    //         input {
+    //           width: 100%;
+    //           height: 34px;
+    //           border: 1px solid rgba(0, 0, 0, 0.3);
+    //           box-sizing: border-box;
+    //           border-radius: 5px;
+    //           margin-top: 10px;
+    //           outline: none;
+    //           padding: 0 10px;
+
+    //           &::placeholder {
+    //             color: #d9d9d9;
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+
+    //   .contact-info {
+    //     width: 100%;
+
+    //     .address-info-head {
+    //       h1 {
+    //         font-family: Roboto;
+    //         font-style: normal;
+    //         font-weight: 500;
+    //         font-size: 21px;
+    //         line-height: 25px;
+    //         color: #405982;
+    //         margin-bottom: 20px;
+    //       }
+    //     }
+
+    //     .address-groups {
+    //       .address-group {
+    //         margin-bottom: 10px;
+
+    //         label {
+    //           font-family: Roboto;
+    //           font-style: normal;
+    //           font-weight: normal;
+    //           font-size: 16px;
+    //           line-height: 19px;
+    //           color: #405982;
+    //           margin-bottom: 10px;
+
+    //           span {
+    //             color: red;
+    //           }
+    //         }
+
+    //         input {
+    //           width: 100%;
+    //           height: 34px;
+    //           border: 1px solid rgba(0, 0, 0, 0.3);
+    //           box-sizing: border-box;
+    //           border-radius: 5px;
+    //           margin-top: 10px;
+    //           outline: none;
+    //           padding: 0 10px;
+
+    //           &::placeholder {
+    //             color: #d9d9d9;
+    //           }
+    //         }
+    //       }
+    //     }
+
+    //     .save-btn {
+    //       display: flex;
+    //       align-items: flex-end;
+    //       justify-content: flex-end;
+
+    //       @media (max-width: 400px) {
+    //         justify-content: center;
+    //       }
+
+    //       .save-btn-content {
+    //         margin-top: 100px;
+    //         width: 201px;
+    //         height: 35px;
+    //         background: #ff912c;
+    //         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    //         border-radius: 5px;
+    //         display: flex;
+    //         align-items: center;
+    //         justify-content: center;
+
+    //         @media (max-width: 400px) {
+    //           width: 181px;
+    //         }
+
+    //         input[type='checkbox'] {
+    //           position: relative;
+    //           cursor: pointer;
+    //           width: 16px;
+    //           height: 16px;
+    //           margin-right: 10px;
+    //         }
+
+    //         input[type='checkbox']:before {
+    //           content: '';
+    //           display: block;
+    //           position: absolute;
+    //           width: 16px;
+    //           height: 16px;
+    //           top: 0;
+    //           left: 0;
+    //           border: 1px solid #ff912c;
+    //           border-radius: 3px;
+    //           background-color: white;
+    //         }
+
+    //         input[type='checkbox']:checked:after {
+    //           content: '';
+    //           display: block;
+    //           width: 5px;
+    //           height: 10px;
+    //           border: solid #ff912c;
+    //           border-width: 0 2px 2px 0;
+    //           -webkit-transform: rotate(45deg);
+    //           -ms-transform: rotate(45deg);
+    //           transform: rotate(45deg);
+    //           position: absolute;
+    //           top: 2px;
+    //           left: 6px;
+    //         }
+
+    //         label {
+    //           font-family: Roboto;
+    //           font-style: normal;
+    //           font-weight: 400;
+    //           font-size: 16px;
+    //           line-height: 19px;
+    //           color: #ffffff;
+    //           padding-top: 3px;
+
+    //           @media (max-width: 400px) {
+    //             font-size: 14px;
+    //           }
+    //         }
+    //       }
+    //     }
+    //   }
+    // }
+  }
+}

@@ -1,0 +1,3 @@
+BALANCEsSYTEMiCONStYPES =>icindekiler genel bir sekilde yazilmis Title dan sonra cixan tyoeslari genellemek icin kodlari sadece bir sefer yazmak ve tekrara yol vermememiz icin Courier ve courirer gibi benzerleri hepsi balanceSsystemTypesIcinde tutlmus.
+
+Yalniz hepsinin reducerleri farklidir.

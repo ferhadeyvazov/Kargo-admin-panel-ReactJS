@@ -1,0 +1,18 @@
+{
+  "main-menu": "Ana Sayfa",
+  "balance-system": "Bakiye Sistemi",
+  "orders": "Sifarişler",
+  "1": "evet",
+  "2": "hayir",
+  "courier-request": "Kurye Talepet",
+  "stock": "Depo",
+  "invocies": "Faturalar",
+  "site-usage": "Site Kullanımı",
+  "buy-for-me": "Satın al",
+  "share-and-earn": "Paylaş ve Kazan",
+  "inventory": "Envanter",
+  "cargo-companies": "Kargo Şirketler",
+  "get-special-offer": "Özel Teklıf Al",
+  "parachute-integrations": "Paraşüt Entegrasyonları",
+  "marketplace-integration": "Pazaryeri Entegrasyonu"
+}

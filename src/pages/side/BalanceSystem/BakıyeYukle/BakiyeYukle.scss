@@ -1,0 +1,193 @@
+@import '../../../../globall';
+@import '../../../../breakpoint';
+
+.bakiye_yukle {
+    // max-width: 1056px;  bfigmada bu kadar verilmis
+    //ama biz 200px ekledik
+    max-width: 80%;
+    width: 100%;
+    min-height: 116px;
+    border-radius: 5px;
+    background: var(--lightBlueLinear);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 19px 0px;
+
+
+    &_title {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+
+        @media(max-width:1217px) {
+            justify-content: center;
+        }
+
+
+
+
+        .title_left {
+            @media(max-width:1217px) {
+                display: none;
+            }
+
+        }
+
+        .title_right {
+            @media(max-width:350px) {
+                font-size: 10px;
+            }
+
+        }
+
+        p {
+            font-size: 18px;
+
+            font-weight: 500;
+            color: #fff;
+
+            @media(max-width:1440px) {
+                font-size: 16px;
+            }
+
+            @media(max-width:500px) {
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    &_accordion_types {
+        display: flex;
+        margin-top: 19px;
+        //
+        max-width: 60%;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media(max-width:1440px) {
+            max-width: 70%;
+
+        }
+
+        @media(max-width:1217px) {
+            flex-direction: column;
+            align-items: flex-start;
+            max-width: 30%;
+        }
+
+        @media(max-width:650px) {
+            max-width: 45%;
+        }
+
+        @media(max-width:450px) {
+            max-width: 60%;
+        }
+
+        .each_type {
+            display: flex;
+            align-items: center;
+
+            &:nth-child(2) {
+                // margin-left: 42px;
+                // margin-right: 42px;
+                margin: 1rem 0rem;
+
+                @media(max-width:1217px) {
+                    margin: 1rem 0rem;
+                }
+            }
+
+            &:last-child() {
+                // margin-left: 42px;
+                // margin-right: 42px;
+                margin: 1rem 0rem;
+
+                @media(max-width:1217px) {
+                    order: 0;
+                }
+            }
+
+            // BTN
+            &_icon {
+                margin-right: 13px;
+                background: #fff;
+                border-radius: 6px;
+                width: 33px;
+                height: 37px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                cursor: pointer;
+                transition: .3s ease;
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+                @media(max-width:1440px) {
+                    width: 25px;
+                    height: 29px;
+                }
+
+                @media(max-width:650px) {
+                    width: 23px;
+                    height: 25px;
+
+                }
+
+                @media(max-width:500px) {
+                    width: 18px;
+                    height: 18px;
+                }
+
+                &:hover {
+                    transform: scale(.97);
+                    box-shadow: rgba(68, 68, 68, 0.35) 0px 5px 15px;
+                }
+
+                i {
+                    font-size: 16px;
+
+                    @media(max-width:650px) {
+                        font-size: 12px;
+                    }
+
+                    @media(max-width:500px) {
+                        font-size: 9px;
+                    }
+
+
+                }
+
+
+            }
+
+            &_title {
+                font-size: 15px;
+                color: #fff;
+
+                @media(max-width:1440px) {
+                    font-size: 15px;
+
+                }
+
+                @media(max-width:650px) {
+                    font-size: 13px;
+
+                }
+
+                @media(max-width:650px) {
+                    font-size: 11px;
+                }
+
+                @media(max-width:550px) {
+                    font-size: 9.5px;
+                }
+            }
+
+        }
+    }
+}

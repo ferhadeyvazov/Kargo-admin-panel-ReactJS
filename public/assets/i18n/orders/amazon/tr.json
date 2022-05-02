@@ -1,0 +1,10 @@
+{
+"custname": "Müşteri Adı",
+"select": "Seç",
+"row1": "Her satıra tek bir ürün içeriği ve gtip numarası girilmelidir",
+"row2": "Kolinizde birden fazla ürün çeşidi var ise her ürün çeşidi için Yeni Paket Ekle butonuna tıklayıp ilgili ürün içeriği ve gtip numarasını yazmanız gerekmektedir",
+"row3": "Amazon kutu standartlarına göre 1 kutunun maksimum tartım ağırlığı 22,5 kg olabilir",
+"row4": "Kutunun en uzun kenarı en fazla 66 cm olabilir",
+"row5": "Bu standartların dışında kalan kolilerinizi inceleyin",
+"row6": "Detaylı bilgi için Amazon fba standartları politikalarını inceleyebilirsiniz"
+}

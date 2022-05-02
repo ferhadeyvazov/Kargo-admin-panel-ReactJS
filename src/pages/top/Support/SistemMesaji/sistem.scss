@@ -1,0 +1,255 @@
+.sistem_mesaji {
+  width: 100%;
+  // max-width: 1050px;
+  max-width: 80%;
+  min-height: 834px;
+  padding: 22px 50px;
+  margin-bottom: 141px;
+  border-radius: 5px;
+  // background-color: #fff;
+  // border: 1px solid red;
+  @media (max-width: 998px) {
+    max-width: 100%;
+  }
+  @media (max-width: 400px) {
+    padding: 22px 25px;
+  }
+  .sistem_mesaji_title {
+    display: flex;
+    align-items: center;
+    padding: 25px 47px;
+    background: #ffffff;
+    border: 0.5px solid rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+
+    @media (max-width: 750px) {
+      padding: 15px 27px;
+      justify-content: center;
+    }
+
+    .blue_box {
+      width: 26px;
+      height: 26px;
+      background: linear-gradient(to right, #18bdf6 25%, #00d2ff 20%);
+      border-radius: 50%;
+      margin-right: 9px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #4878d1;
+      font-weight: 500;
+      border-bottom: none;
+      padding: 0px;
+
+      @media (max-width: 750px) {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &_id_ve_messaj {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 54px;
+    margin-bottom: 54px;
+
+    @media (max-width: 1270px) {
+      flex-direction: column;
+    }
+
+    //ikidene ortak button
+    button {
+      background-color: rgba(24, 189, 246, 1);
+      padding: 8px 31px;
+      border: none;
+      border-radius: 5px;
+      font-size: 19px;
+      color: white;
+      font-weight: 500;
+      margin-bottom: 22px;
+
+      @media (max-width: 2037px) {
+        font-size: 15px;
+      }
+
+      @media (max-width: 750px) {
+        font-size: 14px !important;
+        padding: 8px 11px;
+      }
+    }
+
+    .left {
+      // border: 1px solid red;
+      flex: 1;
+      width: 100%;
+
+      @media (max-width: 1270px) {
+        margin-bottom: 2rem;
+      }
+
+      .all_ids {
+        max-width: 100%;
+        width: 90%;
+        background-color: rgba(255, 255, 255, 1);
+        max-height: 457px;
+        border-radius: 10px;
+
+        @media (max-width: 1270px) {
+          width: 100%;
+        }
+
+        li {
+          font-size: 16px;
+          padding: 10px 60px 10px 24px;
+          cursor: pointer;
+          position: relative;
+          color: rgba(64, 89, 130, 1);
+
+          &:not(:last-child) {
+            border-bottom: 0.4px solid rgba(0, 0, 0, 0.2);
+          }
+        }
+
+        li.active {
+          color: rgba(59, 105, 228, 1);
+
+          span {
+            border-bottom: 2px solid rgba(59, 105, 228, 1);
+            padding-bottom: 0.5rem;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+          }
+        }
+
+        // li.active::after {
+        //     width: 40%;
+        //     height: 20px;
+        //     border-bottom-left-radius: 4px;
+        //     border-bottom-right-radius: 4px;
+        //     border-top-left-radius: 4px;
+        //     border-top-right-radius: 4px;
+        //     content: '';
+        //     border-bottom: 5px solid rgba(59, 105, 228, 1);
+        //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.12);
+        //     position: absolute;
+        //     bottom: -10px;
+        //     left: 50%;
+        //     right: 50%;
+        //     transform: translate(-93%, -50%);
+        // }
+      }
+    }
+
+    .right {
+      // border: 1px solid green;
+      flex: 6;
+      width: 100%;
+
+      .messaj_box {
+        padding: 18px 44px;
+        width: 100%;
+        max-width: 100%;
+        background: #ffffff;
+        border: 0.5px solid rgba(0, 0, 0, 0.25);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+
+        @media (max-width: 750px) {
+          padding: 12px 24px;
+        }
+
+        @media (max-width: 550px) {
+          padding: 10px 14px;
+        }
+
+        .kutular {
+          @media (max-width: 1270px) {
+            margin-bottom: 35px;
+            overflow: hidden;
+          }
+
+          @media (max-width: 750px) {
+            margin-bottom: 5px;
+            // background-color: red;
+          }
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          color: rgba(64, 89, 130, 1);
+          border-bottom: 1px solid rgba(192, 192, 192, 0.55);
+          padding-bottom: 12px;
+          margin-bottom: 34px;
+
+          @media (max-width: 1270px) {
+            font-size: 14px;
+          }
+        }
+
+        //ortak ayarlamalar
+        .messaj_box_ortak {
+          padding: 15px 21px;
+          color: black;
+          max-width: 50%;
+          width: 100%;
+          border: 1px solid rgba(0, 0, 0, 0.25);
+          box-sizing: border-box;
+          border-radius: 5px;
+          margin-bottom: 55px;
+          overflow: auto;
+          height: 200px;
+
+          @media (max-width: 1270px) {
+            margin-bottom: 35px;
+            max-width: 70%;
+            height: 100px;
+          }
+
+          @media (max-width: 750px) {
+            padding: 10px;
+          }
+
+          @media (max-width: 750px) {
+            max-width: 90%;
+          }
+
+          @media (max-width: 550px) {
+            max-width: 95%;
+            height: 60px;
+          }
+
+          p {
+            font-size: 15px;
+            color: black;
+            border-bottom: none;
+
+            @media (max-width: 1270px) {
+              font-size: 13px !important;
+            }
+
+            @media (max-width: 750px) {
+              font-size: 10px !important;
+            }
+          }
+        }
+
+        .flex_end {
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        .flex_start {
+          display: flex;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}

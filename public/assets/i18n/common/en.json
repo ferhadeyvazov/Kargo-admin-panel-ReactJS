@@ -1,0 +1,15 @@
+{
+  "country": "Country",
+  "count": "Count",
+  "type": "Type",
+  "length": "Length",
+  "height": "Height",
+  "weight": "Weight",
+  "totalamount": "Total Amount",
+  "totalvolume": "Total Volume",
+  "desi": "Desi",
+  "totalworth": "Total Worth",
+  "totalweight": "Total Weight",
+  "price": "Price",
+  "pricecalculation": "Price Calculation"
+}

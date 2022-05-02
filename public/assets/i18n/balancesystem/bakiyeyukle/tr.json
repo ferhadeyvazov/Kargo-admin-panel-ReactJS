@@ -1,0 +1,28 @@
+{
+  "bakiye": "Bakiye Yükle",
+  "yuklemegecmisi": "Yükleme Geçmişi",
+  "paraiade": "Para İade İşlemleri",
+  "americandolar": "Amerikan Doları Satış Kuru",
+  "bhbilgileri": "Bank Hesab Bilgileri",
+  "bhodeme": "Bank Hesabına Ödeme",
+  "onlineodeme": "Online Ödeme",
+  "bank_kur_farklari": "Kur farklılıklarından etkilenmemek için lütfen ödeme yaptığınız vakitte dekont yükleyiniz",
+  "odkart": "Ödeme Kartı",
+  "krkart": "Kredit Kartı",
+  "krkartnum": "Kredi kartı Numarası",
+  "oddetay": "Ödeme Detayları",
+  "odtamamla": "Ödemeni Tamamla",
+  "usernumber": "Müşteri Numaranız",
+  "yuklenentutar": "Yüklenilen Tutar",
+  "currency": "Para Birimi",
+  "komisyonhesablama": "Komisyon Hesablama",
+  "aciklama": "Açıklama",
+  "ornek": "örnek: 400",
+  "ileri": "Ilerle",
+  "ode": "Öde",
+  "expdate": "Son Kullanma Tarihi",
+  "seccode": "Güvenlik Kodu",
+    "info": "Bilgi",
+    "yuktutar": "Yüklenilen Tutar"
+}
+

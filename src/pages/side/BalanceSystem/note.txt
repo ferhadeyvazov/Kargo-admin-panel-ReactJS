@@ -1,0 +1,1 @@
+para iade islemlerin icerisine kendi scssini import edemedim O yuzden Onun css ni disarda acdm

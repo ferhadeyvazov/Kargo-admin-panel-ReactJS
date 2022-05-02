@@ -1,0 +1,243 @@
+.my_profile_container {
+
+    .profile_title {
+        padding: 20px 10px;
+
+        .right {
+            img {
+                @media (max-width:400px) {
+                    width: 25px;
+                }
+            }
+        }
+    }
+
+    .profile_body.last-create {
+        background-color: rgb(255, 255, 255);
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+
+        .middle-inputs {
+            padding-bottom: 4rem;
+            width: 100%;
+            max-width: 500px;
+            // background-color: red;
+
+            div {
+
+
+                .label-grid {
+                    display: grid;
+                    grid-template-columns: 130px 1fr;
+                    gap: 1rem;
+                    margin-bottom: 1rem;
+                    // align-content: center;
+                    position: relative;
+                    // background-color: red;
+
+                    @media (max-width:750px) {
+                        grid-template-columns: 1fr;
+                        // grid-template-rows: 1fr;
+                        gap: 0.5rem;
+                        width: 95%;
+                        margin: 10px auto;
+
+                    }
+
+                    span {
+                        color: #405982;
+                        font-size: 15px;
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: center;
+
+                        @media (max-width:750px) {
+                            justify-content: flex-start;
+                        }
+
+                        img {
+                            margin-right: .3rem;
+                        }
+                    }
+
+
+                    input {
+                        width: 100%;
+                        max-width: 275px;
+                        color: #405982;
+                        border: 1px solid rgb(169, 169, 169);
+                        border-radius: 5px;
+                        padding: 10px 12px;
+                        outline: none;
+
+                        @media (max-width:750px) {
+                            max-width: 100%;
+
+                        }
+
+                    }
+
+                    input::-webkit-outer-spin-button,
+                    input::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                        margin: 0;
+                    }
+                }
+            }
+
+            .inner_div_box {
+
+                label {
+                    .inner_span {
+                        position: relative;
+                        // background-color: red;
+                        display: flex;
+                        justify-content: flex-start;
+                        width: 100%;
+
+                        .middle-input-box-input {
+                            // background-color: red;
+                            width: 60%;
+                            margin-left: 4rem;
+                            border-top-left-radius: 0px !important;
+                            border-bottom-left-radius: 0px !important;
+
+                            @media (max-width:750px) {
+                                width: 100%;
+                            }
+                        }
+
+                        &_content {
+                            position: absolute;
+                            width: 65px;
+                            border-top-left-radius: 5px;
+                            border-bottom-left-radius: 5px;
+                            border-top-right-radius: 0px;
+                            border-bottom-right-radius: 0px;
+                            height: 100%;
+                            background-color: transparent;
+                            border: 1px solid rgb(169, 169, 169);
+                            padding-right: 15px;
+
+
+                        }
+                    }
+
+                }
+            }
+
+            .middle-input-box-membership {
+                div {
+                    label {
+
+
+                        span {
+
+                            // background-color: red;
+                            @media (max-width:400px) {
+                                &:first-child {
+                                    // background-color: red;
+                                    text-align: center;
+                                    margin: 0 auto;
+
+                                }
+
+                            }
+
+                        }
+
+                        .radio_buttons_box {
+                            display: flex;
+
+                            @media (max-width:750px) {
+                                justify-content: center;
+                            }
+
+                            label {
+                                // display: flex;
+                                // justify-content: space-between;
+                                // display: none;
+                                display: grid;
+                                grid-template-columns: 20px 1fr;
+                                align-items: center;
+
+                                @media (max-width:400px) {
+                                    grid-template-columns: 8px 1fr;
+
+
+
+                                }
+
+                                &:first-child {
+                                    margin-right: 2rem;
+
+                                    @media (max-width:400px) {
+                                        // background-color: red;
+                                        margin-right: 1rem;
+
+
+                                    }
+
+
+                                }
+
+                                span {
+                                    margin-left: 1rem;
+
+
+                                }
+
+                                //!
+                                .input_radio {
+                                    -webkit-appearance: none;
+                                    border: 1px solid darkgray;
+                                    border-radius: 50%;
+                                    outline: none;
+
+                                    // !dairenin genisliyi
+                                    @media (max-width:450px) {
+                                        padding: 7px;
+
+                                    }
+
+                                    &:before {
+                                        content: '';
+                                        display: block;
+                                        width: 10%;
+                                        height: 50%;
+                                        margin: 15% auto;
+                                        border-radius: 50%;
+                                    }
+
+                                    &:checked {
+                                        border-color: #21e7c3;
+                                        background: #21e7c3;
+                                        box-shadow: inset 0 0 0 3px #e9ecef;
+
+                                    }
+
+                                    &:checked:before {
+                                        background: #21e7c3;
+
+                                    }
+                                }
+
+
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}

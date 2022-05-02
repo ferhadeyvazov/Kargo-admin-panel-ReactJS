@@ -1,0 +1,15 @@
+{
+  "country": "Ülke",
+  "count": "Sayı",
+  "type": "Türü",
+  "length": "Uzunluk",
+  "height": "Yükseklik",
+  "weight": "Ağırlık",
+  "totalamount": "Toplam Tutar",
+  "totalvolume": "Toplam Hacim",
+  "desi": "Desi",
+  "totalworth": "Toplam Değer",
+  "totalweight": "Toplam Ağırlık",
+  "price": "Fiyat",
+  "pricecalculation": "Fiyat Hesaplama"
+}

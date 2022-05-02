@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+}
+.popup{
+    border-radius: 15px;
+    position: absolute;
+    top: 90px;
+    right: 170px;
+    width:60%;
+    background-color:#FFFFFF;
+    z-index: 99999;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+.popup-inner {
+    border-radius: 15px;
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+.popup-inner .button-close .closeup-btn{
+    width: 100px;
+    height: 37px;
+    border: 2px solid #47c5ff;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #47c5ff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header{
+    display: flex;
+    align-items: center;
+    gap: 14.26px;
+}
+.header>div{
+    background: #18BDF6;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header>div>img{
+    width: 14.74px;
+    height: 11.68px;
+}
+.header h2{
+    color:#405982;
+    font-size: 21px;
+    line-height: 24.61px;
+}
+.search{
+    margin: 22px 0 36px 0;
+}
+.search input{
+    width: 70%;
+    height: 30px;
+    border: 1px solid #18BDF6;
+    border-radius: 5px;
+}
+.search input::placeholder{
+font-size: 10px;
+font-weight: 400px;
+line-height: 12px;
+color: #40598240;
+padding: 7px 9px;
+
+}
+.cedvel{
+overflow-y:scroll;
+
+}
+.cedvel table{
+    width: 100%;
+    /* height: 400px; */
+    border: solid;
+    border-radius: 15px;
+    border: 1px solid #00000040;
+}
+.cedvel table thead{
+ background: #AEC1C9;
+ border-radius: 15px 15px 0 0;
+}
+.cedvel table thead tr td:nth-child(1){
+ border-radius: 15px 0 0 0;
+}
+.cedvel table thead tr td:nth-child(4){
+border-radius: 0 15px 0 0;
+}
+.cedvel table thead tr td{
+padding: 12px 41px 15px 25px;
+color: #FFFFFF;
+font-weight: 500;
+
+/* border-radius: 15px 15px 0px 0px; */
+
+}
+.cedvel table tbody tr:nth-child(2n-1){
+background: rgba(174, 193, 201, 0.22);
+}
+.cedvel table tbody tr{
+height: 50px;
+}
+
+.popup-inner button{
+display: flex;
+justify-items: end;
+}
+.button-close{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1024px){
+.cedvel{
+    overflow:scroll;
+}
+.popup{
+width: 70%;
+right: 90px;
+
+}
+
+}
+@media only screen and (max-width: 530px){
+.popup{
+right: 44px;
+
+}
+.popup-inner {
+padding: 10px;
+}
+.search input{
+    width: 100%;
+}
+}

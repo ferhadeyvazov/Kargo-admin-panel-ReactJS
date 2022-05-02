@@ -1,0 +1,10 @@
+{
+  "custname": "Customer Name",
+  "select": "Select",
+  "row1": "A single product content and gtip number must be entered on each line",
+  "row2": "If there is more than one product type in your parcel, you must click on the Add New Package button for each product type and write the relevant product content and gtip number",
+  "row3": "According to Amazon box standards, the maximum weighing weight of 1 box can be 22.5 kg.",
+  "row4": "The longest side of the box can be a maximum of 66 cm",
+  "row5":"Review your parcels that fall outside of these standards",
+  "row6":"For detailed information, you can review the Amazon fba standards policies"
+}

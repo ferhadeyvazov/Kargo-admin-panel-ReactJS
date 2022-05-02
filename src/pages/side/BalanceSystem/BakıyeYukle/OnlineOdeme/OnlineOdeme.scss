@@ -1,0 +1,769 @@
+@import '../../../../../globall';
+
+.online_odeme {
+  border: none !important;
+
+  .online_odeme_title {
+    color: rgba(42, 92, 185, 1);
+    // width: 840px;
+    width: 70%;
+
+    background: linear-gradient(
+      90.11deg,
+      #f5f5f5 -8.12%,
+      #dce2e6 54.44%,
+      #f5f5f5 90.34%
+    );
+    padding-bottom: 13px;
+    padding-top: 13px;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-weight: 500;
+    position: relative;
+    top: -2px;
+
+    @media (max-width: 600px) {
+      //styles go here
+      max-width: 50%; //840px
+      font-size: 12px;
+    }
+
+    @media (max-width: 450px) {
+      font-size: 10px;
+    }
+  }
+
+  // step bar
+  .steps {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    // max-width: 660px;
+    max-width: 80%;
+
+    width: 100%;
+    color: #6b6d71;
+    height: 4rem;
+    // border: 1px solid grey;
+    user-select: none;
+    margin-top: 66px;
+
+    @media (max-width: 900px) {
+      max-width: 75%; //660px
+    }
+
+    @media (max-width: 650px) {
+      max-width: 90%; //660px
+    }
+
+    @media (max-width: 450px) {
+      max-width: 98%; //660px
+    }
+
+    .step {
+      position: relative;
+      display: table-cell;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #016419;
+
+      @media (max-width: 900px) {
+        font-size: 0.71rem;
+      }
+
+      @media (max-width: 650px) {
+        font-size: 0.61rem;
+      }
+
+      &:before {
+        content: attr(data-step);
+        display: block;
+        margin: 0 auto;
+        background: #6bb79b;
+        color: #fff;
+        border: 1px solid rgba(159, 159, 159, 0.85);
+        width: 2rem;
+        height: 2rem;
+        text-align: center;
+        margin-bottom: -4.2rem;
+        line-height: 1.9rem;
+        border-radius: 100%;
+        position: relative;
+        z-index: 1;
+        font-weight: 700;
+        font-size: 1rem;
+
+        @media (max-width: 900px) {
+          width: 1.7rem;
+          height: 1.7rem;
+          font-size: 0.75rem;
+          line-height: 1.7rem;
+          margin-bottom: -3.2rem;
+        }
+
+        @media (max-width: 650px) {
+          width: 1.5rem;
+          height: 1.5rem;
+          font-size: 0.55rem;
+          line-height: 1.5rem;
+        }
+      }
+
+      //step2 den sonra gelen uzun xet
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        background: rgba(159, 159, 159, 0.15);
+        width: 100%;
+        height: 0.125rem;
+        top: 1rem;
+        left: 50%;
+
+        @media (max-width: 900px) {
+          top: 0.7rem;
+        }
+      }
+
+      //step 3 den sonra birdene uzun xte var onu yox edir
+      &:last-child:after {
+        display: none;
+      }
+
+      &.is-complete {
+        color: #6d6875;
+
+        &:before {
+          content: '\2713';
+          background: rgb(90, 206, 164);
+          color: #fef0e2;
+        }
+
+        &:after {
+          background: rgba(170, 163, 163, 0.987);
+        }
+      }
+    }
+  }
+  .pay {
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    div {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      label {
+        color: #405982;
+        font-size: 16px;
+        font-weight: 500;
+      }
+
+      input,
+      select {
+        outline: none;
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid rgba(71, 96, 136, 0.55);
+        border-radius: 5px;
+        color: #476088;
+        font-size: 16px;
+      }
+    }
+    .pay-button {
+      width: 10% !important;
+      display: flex;
+      align-items: center;
+      //   justify-content: flex-end;
+      button {
+        padding: 10px 30px;
+        color: #ffffff;
+        background-color: #6bb79b;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+        box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+
+  .odeme_terminali {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 51px;
+
+    @media (max-width: 1149px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    //KART IMAGES ,adlar ,hissesi
+    .sol_teref_container {
+      // width: 650px;
+      width: 100%;
+      max-width: 60%;
+      height: 484px;
+      border: 1px solid rgba(242, 186, 128, 0.55);
+      box-sizing: border-box;
+      border-radius: 5px;
+      padding: 27px 45px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      @media (max-width: 1230px) {
+        //styles go here
+        padding: 17px 25px;
+        height: auto;
+      }
+
+      @media (max-width: 1149px) {
+        max-width: 80%;
+        margin-top: 2rem;
+        order: 2;
+      }
+
+      @media (max-width: 450px) {
+        max-width: 100%;
+        border: none;
+      }
+
+      // kart hissesi
+      .sol_teref_kart_hissesi {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: 560px;
+        height: 80px;
+        padding: 20px 17px;
+        background: linear-gradient(
+          rgba(206, 204, 204, 0.35) 1.85%,
+          rgba(218, 214, 214, 0) 153.39%
+        );
+        border: 1px solid rgba(187, 187, 187, 0.35);
+        box-sizing: border-box;
+        border-radius: 5px;
+
+        color: #5478d7;
+
+        .input_box {
+        }
+
+        .img_box {
+          filter: invert(61%) sepia(82%) saturate(4114%) hue-rotate(205deg)
+            brightness(89%) contrast(89%);
+          margin: 0px 24px;
+
+          img {
+            width: 33px;
+            height: 23px;
+          }
+        }
+
+        .text {
+          font-size: 11px;
+          text-transform: uppercase;
+
+          @media (max-width: 450px) {
+            font-size: 8px;
+          }
+        }
+      }
+
+      // kart bilgileri
+      .sol_teref_kart_bilgileri {
+        padding-top: 34px;
+        padding-bottom: 47px;
+        padding-left: 72px;
+        padding-right: 82px;
+        height: 210px;
+        max-width: 560px;
+        width: 100%;
+        // background-color: green;
+
+        @media (max-width: 1480px) {
+          //styles go here
+          padding-left: 22px;
+          padding-right: 32px;
+        }
+
+        @media (max-width: 1230px) {
+          //styles go here
+          padding-left: 7px;
+          padding-right: 7px;
+        }
+
+        @media (max-width: 640px) {
+          height: auto;
+        }
+
+        @media (max-width: 550px) {
+          display: flex;
+          flex-direction: column;
+        }
+
+        input[type='number']::-webkit-outer-spin-button,
+        input[type='number']::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+
+        //icindeki inputlara generally css atanmasi
+        input {
+          outline: none;
+          border: 1px solid rgb(214, 214, 214);
+          padding: 0px 10px;
+          color: #4970d4;
+          border-radius: 3px;
+        }
+
+        //icindeki txt lere generally css atanmasi
+        .text {
+          color: #4970d4;
+          font-size: 11px;
+          font-weight: 500;
+        }
+
+        .kredi_kart_numarasi_kutusu {
+          display: grid;
+          grid-template-columns: (150px) 1fr;
+          width: 100%;
+
+          @media (max-width: 640px) {
+            grid-template-columns: (130px) 1fr;
+          }
+
+          @media (max-width: 550px) {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+          }
+
+          .text {
+            @media (max-width: 640px) {
+              font-size: 10px;
+            }
+
+            @media (max-width: 550px) {
+              font-size: 8px;
+            }
+          }
+
+          input {
+            max-width: 279px;
+            width: 100%;
+            height: 30px;
+
+            @media (max-width: 750px) {
+              max-width: 142px;
+              height: 17px;
+            }
+
+            @media (max-width: 550px) {
+              max-width: 122px;
+
+              height: 14px;
+            }
+          }
+        }
+
+        .kullanma_tarihi {
+          display: grid;
+          grid-template-columns: minmax(min-content, 150px) 1fr 1fr;
+          margin-top: 16px;
+          margin-bottom: 16px;
+
+          @media (max-width: 640px) {
+            grid-template-columns: minmax(min-content, 130px) 1fr 1fr;
+            margin-bottom: 16px;
+          }
+
+          @media (max-width: 550px) {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+          }
+
+          .text {
+            @media (max-width: 640px) {
+              font-size: 10px;
+            }
+
+            @media (max-width: 550px) {
+              font-size: 8px;
+            }
+          }
+
+          input {
+            max-width: 83px;
+            width: 100%;
+            height: 27px;
+            border-radius: 3px;
+
+            @media (max-width: 640px) {
+              width: 50px;
+            }
+
+            @media (max-width: 750px) {
+              max-width: 69px;
+              height: 17px;
+            }
+
+            @media (max-width: 550px) {
+              width: 49px;
+              height: 12px;
+            }
+
+            &:nth-child(3) {
+              // border: 1px solid red;
+              justify-self: flex-end;
+              margin-left: 1rem;
+
+              @media (max-width: 1149px) {
+                justify-self: flex-start;
+              }
+
+              @media (max-width: 750px) {
+                margin-left: 0rem;
+              }
+            }
+
+            &:nth-child(2) {
+              // border: 1px solid rgb(0, 30, 255);
+              justify-self: flex-start;
+
+              @media (max-width: 750px) {
+                // display: none;
+                // justify-self: center;
+              }
+            }
+          }
+        }
+
+        .guvenlik_kodu {
+          display: grid;
+          grid-template-columns: minmax(min-content, 150px) 1fr;
+
+          @media (max-width: 640px) {
+          }
+
+          @media (max-width: 550px) {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: center;
+          }
+
+          .text {
+            @media (max-width: 640px) {
+              font-size: 10px;
+            }
+
+            @media (max-width: 550px) {
+              font-size: 8px;
+            }
+          }
+
+          input {
+            width: 100%;
+            max-width: 83px;
+            height: 27px;
+            border-radius: 3px;
+
+            @media (max-width: 750px) {
+              width: 69px;
+              height: 17px;
+            }
+
+            @media (max-width: 550px) {
+              width: 49px;
+              height: 12px;
+            }
+          }
+        }
+      }
+
+      // kartin sahibinin bilgileri
+      .sol_teref_kart_sahibi {
+        background: linear-gradient(
+          rgba(206, 204, 204, 0.35) 19.12%,
+          rgba(218, 214, 214, 0) 85.79%
+        );
+        border-radius: 5px;
+        width: 100%;
+        max-width: 560px;
+        height: 80px;
+        padding-left: 72px;
+        padding-right: 82px;
+        padding-top: 11px;
+        padding-bottom: 11px;
+
+        @media (max-width: 1480px) {
+          //styles go here
+          padding-left: 22px;
+          padding-right: 32px;
+        }
+
+        @media (max-width: 1230px) {
+          //styles go here
+          padding-left: 7px;
+          padding-right: 7px;
+        }
+
+        .kutu_sahib {
+          display: grid;
+          grid-template-columns: minmax(min-content, 120px) 1fr;
+          grid-gap: 2rem;
+        }
+
+        .text {
+          font-size: 11px;
+          color: rgba(73, 112, 212, 1);
+
+          @media (max-width: 640px) {
+            font-size: 10px;
+          }
+
+          @media (max-width: 550px) {
+            font-size: 8px;
+          }
+        }
+
+        input {
+          outline: none;
+          border: 1px solid rgb(214, 214, 214);
+          padding: 0px 10px;
+          color: #4970d4;
+          border-radius: 3px;
+          max-width: 279px;
+          width: 100%;
+          height: 30px;
+
+          @media (max-width: 750px) {
+            width: 119px;
+            height: 20px;
+          }
+
+          @media (max-width: 550px) {
+            width: 89px;
+            height: 18px;
+          }
+        }
+
+        input[type='number']::-webkit-outer-spin-button,
+        input[type='number']::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+        }
+
+        .kredi_kart_sahibi {
+          .text {
+            // margin-right: 12px;
+          }
+        }
+
+        .email_adress {
+          margin-top: 11px;
+
+          .text {
+            // margin-right: 48px;
+          }
+        }
+      }
+    }
+
+    //yuklenilen tutar Para birmi listeler hissesi
+    .sag_teref_container {
+      max-height: 114px;
+      // width: 262px;
+      width: 100%;
+      max-width: 25%;
+      border: 1px solid rgba(242, 186, 128, 0.55);
+      box-sizing: border-box;
+      border-radius: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 9px;
+      position: relative;
+
+      @media (max-width: 1149px) {
+        max-width: 35%;
+      }
+
+      @media (max-width: 750px) {
+        max-width: 65%;
+      }
+
+      @media (max-width: 450px) {
+        max-width: 85%;
+      }
+
+      .sag_teref_bilgiler {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #6b6d71;
+        position: relative;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #e4e3e3;
+
+        &_text {
+          font-size: 16px;
+          font-weight: 500;
+
+          @media (max-width: 1230px) {
+            //styles go here
+            font-size: 12px;
+          }
+
+          @media (max-width: 550px) {
+            //styles go here
+            font-size: 10px;
+          }
+        }
+
+        &_currency {
+          display: flex;
+
+          &_text {
+            font-weight: bold;
+            margin-right: 10px;
+
+            @media (max-width: 1230px) {
+              //styles go here
+              font-size: 12px;
+            }
+
+            @media (max-width: 550px) {
+              //styles go here
+              font-size: 10px;
+            }
+          }
+
+          .dropdown_select {
+            display: flex;
+            justify-content: space-between;
+            width: 45px;
+
+            @media (max-width: 1230px) {
+              //styles go here
+              font-size: 12px;
+            }
+
+            label {
+              color: #7db9ff;
+
+              @media (max-width: 1230px) {
+                //styles go here
+                font-size: 12px;
+              }
+
+              @media (max-width: 550px) {
+                //styles go here
+                font-size: 10px;
+              }
+            }
+
+            i {
+              color: #f3be7a;
+            }
+          }
+        }
+
+        //////dropdown ile acilan currency list
+        .dropdown_select_list {
+          overflow: scroll;
+          width: 50px;
+          max-height: 75px;
+          position: absolute;
+          background-color: rgb(247, 247, 247);
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          top: 25px;
+          right: -5px;
+          scroll-behavior: smooth;
+          scroll-snap-type: y mandatory;
+          scrollbar-width: none; //for firefox
+
+          &::-webkit-scrollbar {
+            //for chorem
+            display: none;
+          }
+
+          p {
+            padding: 5px;
+            color: #3f8be2;
+            cursor: pointer;
+
+            &:hover {
+              background-color: black;
+              color: white;
+              transition: 0.2s ease;
+            }
+          }
+        }
+      }
+
+      .sag_teref_miktar {
+        padding-top: 12px;
+        display: flex;
+        justify-content: space-between;
+        color: #6b6d71;
+
+        &_text {
+          font-weight: bold;
+
+          @media (max-width: 1230px) {
+            //styles go here
+            font-size: 12px;
+          }
+
+          @media (max-width: 550px) {
+            //styles go here
+            font-size: 10px;
+          }
+        }
+
+        &_deger {
+          padding-right: 10px;
+
+          @media (max-width: 1230px) {
+            //styles go here
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .odeme_btn_green {
+    background-color: #6bb79b;
+    padding: 11px 32px;
+    border: none;
+    margin-top: 37px;
+    margin-bottom: 37px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+
+    &:hover {
+      transition: 0.5s ease;
+      background-color: #70d1ae;
+      box-shadow: none;
+    }
+  }
+}

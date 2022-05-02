@@ -1,0 +1,1 @@
+export const SET_ACTIVE_STOCK = "SET_ACTIVE_STOCK";

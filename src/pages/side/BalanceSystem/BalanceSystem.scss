@@ -1,0 +1,293 @@
+@import '../../../globall';
+
+
+//burda yazilan scss kodlar esasen courier ve courier kimi bir basaka oxasr komponentler ucun eyni olacag Yani  courier ve digerlerinde sadece umumi scss clas adlarini yazacagig
+
+
+.system_main {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #F8FAFF;
+
+    .system_container {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+
+        @media(max-width:1300px) {
+            width: 75%;
+        }
+
+        @media(max-width:1200px) {
+            //styles go here
+            width: 70%;
+        }
+
+        @media(max-width:998px) {
+            //styles go here
+            width: 90%;
+
+        }
+
+        //bunu yeni ekledim ***********
+        @media(max-width:400px) {
+
+            // border: 1px solid rgb(157, 255, 0);
+            // background-color: green;
+            width: 85%;
+
+        }
+
+        // styles for title
+        .top_system {
+            // border: 1px solid black;
+            width: 100%;
+            max-width: 25%;
+            height: 80px;
+            border-radius: 5px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -40px;
+            background-color: #fff;
+            color: #405982;
+
+            @media(max-width:1440px) {
+                //styles go here
+                max-width: 25%;
+                height: 60px;
+            }
+
+            @media(max-width:1200px) {
+
+                top: -20px;
+
+            }
+
+            @media(max-width:998px) {
+                //styles go here
+                height: 60px;
+                top: -20px;
+                max-width: 38%;
+            }
+
+            @media(max-width:640px) {
+                //styles go here
+                padding: 1rem 1.4rem;
+                min-width: 250px;
+            }
+
+            //bunu yeni ekledim ***********
+            @media(max-width:400px) {
+                // background-color: red;
+                min-width: 200px;
+
+            }
+
+
+            &_icon {
+                width: 37px;
+                height: 37px;
+                background: var(--lightBlueLinear);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                margin-right: 12px;
+
+                // margin-left: 62px;
+                @media(max-width:1440px) {
+                    width: 27px;
+                    height: 27px;
+                }
+
+                @media(max-width:1200px) {
+                    //styles go here
+                    width: 26px;
+                    height: 26px;
+                }
+
+                // @media(max-width:1200px) {
+                //     //styles go here
+                //     width: 18px;
+                //     height: 18px;
+                // }
+
+                @media(max-width:400px) {
+                    width: 24px;
+                    height: 24px;
+
+                }
+
+                img {
+                    width: 17px;
+                    height: 17px;
+
+                    @media(max-width:1440px) {
+                        width: 14px;
+                        height: 14px;
+                    }
+
+                    // @media(max-width:1200px) {
+                    //     //styles go here
+                    //     width: 16px;
+                    //     height: 12px;
+                    // }
+
+                    // @media(max-width:500px) {
+                    //     width: 10px;
+                    //     height: 10px;
+                    // }
+                }
+            }
+
+            &_title {
+                font-weight: 500;
+                font-size: 21px;
+
+                @media(max-width:1440px) {
+                    font-size: 15px;
+                }
+
+
+
+
+                @media(max-width:1200px) {
+                    //styles go here
+                    font-size: 13px;
+                }
+
+                @media(max-width:998px) {
+
+                    font-size: 16px;
+                }
+
+            }
+        }
+
+        // styles for types
+        //burda yazilan balance_system_types n scss dir Biz umumilesdirmek adina system types seklinde
+        .system_types {
+            margin-top: 32px;
+            margin-bottom: 42px;
+            display: flex;
+            justify-content: space-between;
+            max-width: 85%;
+            width: 100%;
+            color: #405982;
+            flex-wrap: wrap;
+
+            @media(max-width:1300px) {
+                margin-top: 0px;
+            }
+
+            @media(max-width:1440px) {
+                width: 80%;
+            }
+
+            @media(max-width:600px) {
+                flex-direction: column;
+            }
+
+            .active.each_type {
+                box-shadow: none;
+
+                .each_type_title {
+                    background: linear-gradient(90deg, rgba(209, 210, 213, 0.9) -19.31%, rgba(218, 218, 218, 0.5) 105.37%);
+                    color: rgba(72, 120, 209, 1);
+
+                }
+            }
+
+
+            .each_type {
+                display: flex;
+                align-items: center;
+                box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.04);
+                cursor: pointer;
+                transition: .5s ease-in-out;
+                margin-bottom: 1rem;
+                margin: 1rem auto;
+
+
+
+                &:nth-child(2) {
+                    // margin-left: 88px;
+                    // margin-right: 66px;
+                    // background: rxed;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+
+                    .each_type_title {}
+                }
+
+                .blue {
+                    background: var(--lightBlueLinear);
+
+                }
+
+                .red {
+                    background: var(--redLinearDark);
+                }
+
+
+                .orange {
+                    background: var(--orangeLinear);
+                    ;
+                }
+
+                &_icon {
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: -18px;
+                    z-index: 10;
+                    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+                    transition: .5s linear;
+
+                    @media(max-width:600px) {
+                        width: 35px;
+                        height: 35px;
+                    }
+
+                    img {
+                        width: 21px;
+                        height: 21px;
+                        display: block;
+
+                        @media(max-width:600px) {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+
+
+                &_title {
+                    font-weight: 500;
+                    font-size: 15px;
+                    background: #fff;
+                    padding: 13px 61px 13px 42px;
+                    border-radius: 0px 5px 5px 0px;
+                    transition: .5s ease-in-out;
+
+                    @media(max-width:600px) {
+                        font-size: 13px;
+                        padding: 8px 41px 8px 32px;
+
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,216 @@
+.market_table_wrapper {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+    box-sizing: border-box;
+    box-shadow: 0px 7px 25px rgba(0, 0, 0, 0.15);
+    margin-top: 33px;
+    margin-bottom: 114px;
+    padding: 33px;
+    max-width: 80%;
+    width: 100%;
+    // min-height: 431px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+    display: block;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        width: 2px;
+        height: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: rgb(221, 221, 221);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgb(197, 197, 197);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background-color: #3b69e4;
+        transition: .5s ease;
+        cursor: pointer;
+    }
+
+    @media(max-width:1000px) {
+        padding: 10px 23px 23px 23px;
+    }
+
+    @media(max-width:750px) {
+        display: block;
+        overflow-x: auto;
+    }
+
+    p {
+        padding: 22px 0px;
+        width: 100%;
+        color: #3878D1;
+        font-size: 18px;
+        font-weight: bold;
+
+        @media(max-width:550px) {
+            padding: 15px 0px;
+
+        }
+
+        @media(max-width:1000px) {
+            padding: 8px;
+            font-size: 14px;
+
+        }
+
+
+    }
+
+
+    .table-heading-icon {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+
+        img {
+            margin-right: 2rem;
+        }
+
+        h4 {
+            color: #405982;
+        }
+    }
+
+    table {
+        width: 100%;
+        border-spacing: 0;
+        border-top: 1px solid #D3D3D3;
+
+        @media(max-width:750px) {
+            min-width: 600px;
+
+        }
+
+        thead {
+            background-color: #E8EFF8;
+
+            //tr
+            .table_header_row {
+                display: grid;
+                // grid-template-columns: 100px 264px 166px 239px 239px;
+
+                grid-template-columns: minmax(min-content, 8%) repeat(4, minmax(min-content, 20%));
+                justify-content: center;
+
+                @media(max-width:1000px) {
+                    grid-template-columns: minmax(min-content, 8%) repeat(4, minmax(min-content, 24%));
+                }
+
+                th {
+                    padding: 19px 0px;
+
+                    @media(max-width:1220px) {
+                        padding: 15px 0px;
+                    }
+
+
+
+                    &:not(:last-child) {
+                        div {
+                            border-right: 1px solid #BBBBBB;
+                        }
+                    }
+
+                    div {
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-around;
+
+
+                        span {
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: #677094;
+
+                            @media(max-width:1220px) {
+                                font-size: 12px;
+                            }
+
+                            // @media(max-width:550px) {
+                            //     font-size: 10px;
+                            // }
+
+                            i {
+                                font-size: 13px;
+                                color: #3b69e4;
+                                cursor: pointer;
+
+                                @media(max-width:1220px) {
+                                    font-size: 9px;
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+
+                .product_name {
+                    .hastag {
+                        // margin-right: 35px;
+                    }
+                }
+
+                .empty {
+                    width: 135px;
+                }
+            }
+
+
+
+        }
+
+        tbody {
+            tr {
+                display: grid;
+                // grid-template-columns: 100px 264px 166px 239px 239px;
+                grid-template-columns: minmax(min-content, 8%) repeat(4, minmax(min-content, 20%));
+
+                justify-content: center;
+                border: 2px solid #E0E0E0;
+
+                @media(max-width:1000px) {
+                    grid-template-columns: minmax(min-content, 8%) repeat(4, minmax(min-content, 24%));
+                }
+
+
+                &:nth-child(2) {
+                    background: #FAFAFC;
+                }
+
+                td {
+                    text-align: center;
+                    padding: 18px 0px;
+
+                    &:nth-of-type(odd) {
+                        background-color: #FAFAFC;
+                    }
+
+                    @media(max-width:1217px) {
+                        font-size: 12px;
+                    }
+
+                    // @media(max-width:550px) {
+                    //     font-size: 10px;
+                    // }
+                }
+
+            }
+
+            &:nth-child(4) {
+                background: #FAFAFC;
+
+            }
+        }
+    }
+}

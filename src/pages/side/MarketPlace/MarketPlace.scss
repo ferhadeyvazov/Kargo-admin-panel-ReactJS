@@ -1,0 +1,169 @@
+.manual-order-section {
+    width: 80%;
+
+    .container {
+        .marketplace-integration {
+            width: 100%;
+            height: auto;
+            background: #FFFFFF;
+            border: 0.5px solid rgba(0, 0, 0, 0.25);
+            box-sizing: border-box;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+
+            .marketplace-content {
+                padding: 26px 54px 87px 54px;
+
+                @media screen and (max-width:400px) {
+                    padding: 26px 16px 50px 16px;
+                }
+
+                .marketplace-heading {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 50px;
+
+                    img {
+                        margin-right: 12px;
+                    }
+
+                    h4 {
+                        font-family: Roboto;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 21px;
+                        line-height: 25px;
+                        color: #405982;
+                    }
+                }
+
+                .all-cargo {
+                    margin-bottom: 65px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .cargo-items {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        column-gap: 65px;
+                        row-gap: 65px;
+                        padding: 0 50px;
+
+                        @media screen and (max-width:1150px) {
+                            column-gap: 40px;
+                            row-gap: 46px;
+                            padding: 0 20px;
+                        }
+
+                        @media screen and (max-width:992px) {
+                            grid-template-columns: 1fr 1fr;
+                            column-gap: 65px;
+                            row-gap: 65px;
+                        }
+
+                        @media screen and (max-width:600px) {
+                            grid-template-columns: 1fr;
+                            column-gap: 65px;
+                            row-gap: 65px;
+                        }
+
+                        .cargo-item {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            justify-content: center;
+
+                            .cargo-images {
+                                width: 139px;
+                                height: 139px;
+                                border-radius: 100px;
+                                background: #FFFFFF;
+                                border: 1px solid #E2E2E2;
+                                box-sizing: border-box;
+                                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-bottom: 15px;
+                            }
+
+                            p {
+                                font-family: Roboto;
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 19px;
+                                line-height: 22px;
+                                color: #405982;
+                            }
+                        }
+                    }
+                }
+
+                .marketplace-bottom {
+                    width: 100%;
+                    height: auto;
+                    background: #FFFFFF;
+                    border: 0.5px solid rgba(0, 0, 0, 0.25);
+                    box-sizing: border-box;
+                    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+                    border-radius: 5px;
+
+                    .marketplace-bottom-content {
+                        padding: 32px;
+
+                        @media screen and (max-width:400px) {
+                            padding: 15px;
+                        }
+
+                        .keys {
+                            display: grid;
+                            grid-template-columns: 1fr 1fr;
+                            column-gap: 22px;
+
+                            @media screen and (max-width:768px) {
+                                grid-template-columns: 1fr;
+                            }
+
+                            .key {
+                                width: 100%;
+
+                                @media screen and (max-width:768px) {
+                                    margin-bottom: 20px;
+                                }
+
+                                h4 {
+                                    font-family: Roboto;
+                                    font-style: normal;
+                                    font-weight: normal;
+                                    font-size: 14px;
+                                    line-height: 16px;
+                                    color: #405982;
+                                    margin-bottom: 8px;
+
+                                    sup {
+                                        color: red;
+                                    }
+                                }
+
+                                .key-input {
+                                    width: 100%;
+
+                                    input {
+                                        width: 100%;
+                                        height: 34px;
+                                        border: 1px solid rgba(0, 0, 0, 0.3);
+                                        box-sizing: border-box;
+                                        border-radius: 5px;
+                                        outline: none;
+                                        padding: 0 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

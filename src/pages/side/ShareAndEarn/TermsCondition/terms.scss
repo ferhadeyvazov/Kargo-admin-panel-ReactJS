@@ -1,0 +1,38 @@
+.terms_condition {
+
+    width: 80%;
+    position: relative;
+    min-height: 500px;
+    margin: 1.5rem 0rem;
+    padding: 32px 40px;
+    background-color: #fff;
+    border-radius: 5px;
+
+    &_title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+
+        .blue_box {
+            background: linear-gradient(#85E2F1 7.58%, #47C5FF 118.18%);
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            margin-right: 11px;
+
+            @media(max-width:1500px) {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        p {
+            font-size: 23px;
+            font-weight: 500;
+
+            @media(max-width:1500px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

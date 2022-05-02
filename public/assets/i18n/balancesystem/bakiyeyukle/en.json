@@ -1,0 +1,29 @@
+{
+"bakiye": "Load Balance",
+"yuklemegecmisi": "Download History",
+"paraiade": "Money Back Transactions",
+"americandolar": "US Dollar Selling Rate",
+"bhbilgileri": "Bank Account Information",
+"bhodeme": "Payment to Bank Account",
+"onlineodeme": "Online Payment",
+"bank_kur_farklari": "In order not to be affected by currency differences, please upload the receipt at the time of payment.",
+"odkart": "Payment Card",
+"krkart": "Credit Card",
+"krkartnum": "Credit Card Number",
+"oddetay": "Payment Details",
+"odtamamla": "Complete Your Payment",
+"usernumber": "Your Customer Number",
+"yuklenentutar": "Amount Charged",
+"currency": "Currency Unit",
+"komisyonhesablama": "Commission Calculation",
+"aciklama": "Explanation",
+"ornek": "example: 400",
+"ileri": "Next",
+"ode": "Pay",
+"expdate": "Expiration Date",
+"seccode": "Security Code",
+"info": "İnfo",
+"yuktutar": "Charged Amount"
+
+
+}

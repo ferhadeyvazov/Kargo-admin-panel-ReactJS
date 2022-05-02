@@ -1,0 +1,138 @@
+.my-adress {
+  .profile_title {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 800px) {
+      margin-bottom: 2rem;
+    }
+
+    .left {
+      color: rgba(64, 89, 130, 1);
+      font-weight: 500;
+      font-size: 21px;
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 400px) {
+        font-size: 12px;
+      }
+
+      img {
+        margin-right: 1rem;
+      }
+    }
+
+    .right {
+      img {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .main-table {
+    width: 100%;
+    padding: 0px 40px 40px 40px;
+
+    @media (max-width: 800px) {
+      padding: 10px;
+
+    }
+
+    .adress-search {
+      //   max-width: 200px;
+      // margin: 20px 0px;
+      padding: 20px 0px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      //   background-color: red;
+
+      input {
+        width: 100%;
+        padding: 10px 29px;
+        font-size: 13px;
+        //   background-color: transparent;
+        border: #18bdf6 2px solid;
+        border-radius: 5px;
+        outline: none;
+        color: rgba(0, 0, 0, 0.823);
+      }
+
+      ::-webkit-input-placeholder {
+        color: #48484892;
+      }
+
+      .img {
+        position: absolute;
+        top: 50%;
+        left: 2.4%;
+        transform: translate(-50%, -50%);
+        color: #48484892;
+        font-size: 20px;
+        font-weight: 100;
+        display: none;
+      }
+    }
+
+    .tablediv {
+      width: 100%;
+      display: block !important;
+      overflow-x: auto !important;
+      white-space: nowrap;
+      width: 100%;
+      border: 1px solid rgba(12, 11, 11, 0.401);
+      border-radius: 5px;
+
+      table {
+        width: 100%;
+        overflow: hidden;
+        border-radius: 5px;
+        // overflow: hidden;
+        border-collapse: collapse;
+        // border-radius: 10px;
+        // border: 1px solid #000;
+        // display: inline-block;
+
+        @media (max-width: 1250px) {
+          width: 560px;
+        }
+
+        thead {
+          border-radius: 5px;
+          background: #a1b6c0;
+
+          tr {
+            th {
+              padding: 10px 0;
+              color: #fff;
+              font-size: 14px;
+              font-weight: 500;
+              border-right: 1px solid rgba(255, 255, 255, 0.415);
+            }
+          }
+        }
+
+        tbody {
+          tr {
+
+            &:nth-child(even) {
+              background: #aec1c995;
+            }
+
+            td {
+              text-align: center;
+              padding: 10px 0;
+              color: #3E3E3E;
+              font-weight: 400;
+              font-size: 14px;
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

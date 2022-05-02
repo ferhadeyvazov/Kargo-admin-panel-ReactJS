@@ -1,0 +1,20 @@
+{
+  "edit":"Düzenle",
+  "instatus":"Envanter Durumu",
+  "instatistic":"Envanter İstatistikleri",
+  "name":"Ad",
+  "gtipcode":"GTIP Kod",
+  "protype":"Ürün Türü",
+  "parent":"Kaynak",
+  "about":"Hakkında",
+  "ordercount":"Sipariş Sayısı",
+  "passtime":"geçen zaman",
+  "piecesleft":"adet kaldı",
+  "sold":"Satıldı",
+  "soldplace":"Satış Yeri",
+  "barcode":"Barkodu",
+  "companyname":"Şirket İsmi",
+  "privatekey":"Özel Anahtar",
+  "create":"Oluştur"
+
+}
