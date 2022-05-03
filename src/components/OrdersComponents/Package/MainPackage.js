@@ -6,17 +6,12 @@ import AddAnotherPackageSection from "./AddAnotherPackageSection";
 import PackageBottom from "./PackageBottom";
 import { useTranslation } from "react-i18next";
 
-const Package = ({setProduct, product, New_Product, pack, Packed}) => {
+const Package = ({setProduct, product, New_Product, pack, Packed,Active,inp_disabled}) => {
   const {t} = useTranslation(["orders","orders/manorder"])
 const [dropitem, setDropitem] = useState(false);
 const Active_button =()=>{
   setDropitem(!dropitem);
 }
-const [inp_disabled, setInp_disabled]=useState(false);
-const Check = ()=>{
-  setInp_disabled(true);
-}
-
   return (
     <>
       <div className="package">
@@ -42,7 +37,7 @@ const Check = ()=>{
 
           <PackageBottom />
           <div className="package-btns">
-            <button onClick={Check} className="get-quote">
+            <button onClick={Active} className="get-quote">
               <img src={QuoteSvg} alt="" />
               {t("orders/manorder:getaquote")}
             </button>

@@ -91,37 +91,34 @@ function Common(e){
     setProduct(newdata);
 
   }
-  const[respons, setRespons] = useState([])
-  useEffect(()=> {
-
-        if((emtypack&&emtyproduct)&&[]){
-          
+  
+  const[inp_disabled, setInp_disabled] = useState(false);
+  
+  function Active(){
+      if(emtypack&&emtyproduct){
+          setInp_disabled(true);
           let packdaties = localStorage.getItem('Product','Package');
           let sendatas = JSON.parse(packdaties);
           axios.post('http://kargo.kendigetir.az/public/api/address/create', sendatas)
-          .then(res => setRespons(res.data))
+          .then(response => response)
           .catch((error)=>{
             if(error.response){
               console.log(error.response.data);
             }
           })
 
-        }
+      }
 
-
-
-
-    },[emtypack,emtyproduct]
-  )
+  }
   return (
     <>
       <CustomerSection data={data} handle={handle}  />
       {emtyinputs ? <CommonInformation com={com} Common={Common} />:""}
       {emtyinputs&&emtycommon ? <OrderInformation />:""}
       {/* {emtyinputs && emtycommon ? <MainPackage /> : ""} */}
-      <MainPackage product={product} 
+      <MainPackage product={product} Active={Active}
       setProduct={setProduct} New_Product={New_Product}
-      pack={pack} Packed={Packed}  />
+      pack={pack} Packed={Packed} inp_disabled={inp_disabled}  />
       <ShipmentDefination shipment={true} />
       <ProductContent />
       <Attachment />
