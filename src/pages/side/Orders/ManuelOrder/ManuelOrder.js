@@ -117,8 +117,8 @@ function Common(e){
       {emtyinputs&&emtycommon ? <OrderInformation />:""}
       {/* {emtyinputs && emtycommon ? <MainPackage /> : ""} */}
       <MainPackage product={product} Active={Active}
-      setProduct={setProduct} New_Product={New_Product}
-      pack={pack} Packed={Packed} inp_disabled={inp_disabled}  />
+      setProduct={setProduct} New_Product={New_Product} pack={pack} 
+      Packed={Packed} inp_disabled={inp_disabled} setInp_disabled={setInp_disabled} />
       <ShipmentDefination shipment={true} />
       <ProductContent />
       <Attachment />

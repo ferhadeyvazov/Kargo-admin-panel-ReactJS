@@ -832,7 +832,7 @@
           align-items: center;
           justify-content: space-between;
           .left-buttons{
-            width: 185px;
+            width: 100px;
             height: 35px;
             border: none;
             background: #ff912c;
@@ -844,7 +844,10 @@
             font-weight: 500;
             font-size: 16px;
             line-height: 19px;
-
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
           }
           .right-buttons{
             display: flex;

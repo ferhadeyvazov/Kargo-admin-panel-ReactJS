@@ -1,12 +1,14 @@
 import React, {useState} from "react";
 import QuoteSvg from "../../../assets/ordersIcons/getQuote.svg";
+import editBtn from "../../../assets/inventoryImage/edit-btn.svg";
+
 //components
 import PackageSection from "./PackageSection";
 import AddAnotherPackageSection from "./AddAnotherPackageSection";
 import PackageBottom from "./PackageBottom";
 import { useTranslation } from "react-i18next";
 
-const Package = ({setProduct, product, New_Product, pack, Packed,Active,inp_disabled}) => {
+const Package = ({ setProduct, product, New_Product, pack, Packed, Active, inp_disabled, setInp_disabled}) => {
   const {t} = useTranslation(["orders","orders/manorder"])
 const [dropitem, setDropitem] = useState(false);
 const Active_button =()=>{
@@ -38,7 +40,11 @@ const Active_button =()=>{
           <PackageBottom />
           <div className="package-btns">
             <div className="left-buttons">
-              <button className="left-buttons">Edit</button>
+              <button onClick={() => setInp_disabled(false)} 
+              className="left-buttons">
+                <img src={editBtn} alt="" />  
+                Edit
+              </button>
             </div>
               <div className="right-buttons">
               <button onClick={Active} className="get-quote">
