@@ -37,14 +37,20 @@ const Active_button =()=>{
 
           <PackageBottom />
           <div className="package-btns">
-            <button onClick={Active} className="get-quote">
-              <img src={QuoteSvg} alt="" />
-              {t("orders/manorder:getaquote")}
-            </button>
-            <button className="add-another-package">
-              <i className="fas fa-plus"></i>
-               {t("orders/manorder:addpack")}
-            </button>
+            <div className="left-buttons">
+              <button className="left-buttons">Edit</button>
+            </div>
+              <div className="right-buttons">
+              <button onClick={Active} className="get-quote">
+                <img src={QuoteSvg} alt="" />
+                {t("orders/manorder:getaquote")}
+              </button>
+              <button className="add-another-package">
+                <i className="fas fa-plus"></i>
+                {t("orders/manorder:addpack")}
+              </button>
+
+              </div>
           </div>
         </div>
       </div>

@@ -829,9 +829,27 @@
 
         .package-btns {
           display: flex;
-          align-items: flex-end;
-          justify-content: flex-end;
+          align-items: center;
+          justify-content: space-between;
+          .left-buttons{
+            width: 185px;
+            height: 35px;
+            border: none;
+            background: #ff912c;
+            border-radius: 5px;
+            color: #ffffff;
+            cursor: pointer;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
 
+          }
+          .right-buttons{
+            display: flex;
+
+          }
           .get-quote {
             margin-right: 24px;
             display: flex;
