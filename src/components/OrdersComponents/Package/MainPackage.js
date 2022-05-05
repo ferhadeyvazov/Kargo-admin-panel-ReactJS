@@ -10,8 +10,8 @@ import { useTranslation } from "react-i18next";
 
 const Package = ({ setProduct, product, New_Product, pack, Packed, Active, inp_disabled, setInp_disabled}) => {
   const {t} = useTranslation(["orders","orders/manorder"])
-const [dropitem, setDropitem] = useState(false);
-const Active_button =()=>{
+  const [dropitem, setDropitem] = useState(false);
+  const Active_button =()=>{
   setDropitem(!dropitem);
 }
   return (
@@ -37,7 +37,9 @@ const Active_button =()=>{
             </div>
           </div> */}
 
-          <PackageBottom />
+          <PackageBottom pack={pack}
+          product={product}
+           />
           <div className="package-btns">
             <div className="left-buttons">
               <button onClick={() => setInp_disabled(false)} 

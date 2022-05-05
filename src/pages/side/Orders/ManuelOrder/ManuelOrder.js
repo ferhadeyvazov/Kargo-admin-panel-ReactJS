@@ -51,7 +51,9 @@ let emtypack = Object.values(pack).slice(0).every(a => (a && a !== "0"));
 let emtyproduct = Object.values(product).slice(0).every(a => (a && a !== "0"));
 console.log(emtyinputs);
 console.log(emtycommon);
+console.log(pack);
 console.log(product);
+
 if(emtyinputs){
   Doluinput();
 }
@@ -115,10 +117,16 @@ function Common(e){
       <CustomerSection data={data} handle={handle}  />
       {emtyinputs ? <CommonInformation com={com} Common={Common} />:""}
       {emtyinputs&&emtycommon ? <OrderInformation />:""}
-      {/* {emtyinputs && emtycommon ? <MainPackage /> : ""} */}
-      <MainPackage product={product} Active={Active}
+{/* {
+  emtyinputs&&emtycommon?<MainPackage product={product} Active={Active}
       setProduct={setProduct} New_Product={New_Product} pack={pack} 
       Packed={Packed} inp_disabled={inp_disabled} setInp_disabled={setInp_disabled} />
+      :""
+} */}
+<MainPackage product={product} Active={Active}
+      setProduct={setProduct} New_Product={New_Product} pack={pack} 
+      Packed={Packed} inp_disabled={inp_disabled} setInp_disabled={setInp_disabled} />
+
       <ShipmentDefination shipment={true} />
       <ProductContent />
       <Attachment />

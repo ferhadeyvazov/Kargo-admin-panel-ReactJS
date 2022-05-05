@@ -6,8 +6,9 @@ import Kilogramme from '../../../assets/ordersIcons/kilogramme.svg';
 import TotalWorth from '../../../assets/ordersIcons/worth.svg';
 import Dersi from '../../../assets/ordersIcons/dersi.svg';
 import { useTranslation } from 'react-i18next';
-const PackageBottom = () => {
+const PackageBottom = ({pack,product}) => {
   const {t} = useTranslation(["orders","orders/manorder"])
+  console.log(pack.count);
   return (
     <>
       <div className="package-bottom">
@@ -32,7 +33,7 @@ const PackageBottom = () => {
               </div>
               <div className="bottom-right">
                 <p>{t("orders/manorder:tvolume")}:</p>
-                <p>1 {t("orders/manorder:box")}</p>
+                <p>{pack.length*pack.width*pack.height} {t("orders/manorder:box")}</p>
               </div>
             </div>
             <div className="bottom-item">
@@ -43,7 +44,7 @@ const PackageBottom = () => {
               </div>
               <div className="bottom-right">
                 <p>{t("orders/manorder:tweight")}:</p>
-                <p>1 {t("orders/manorder:box")}</p>
+                <p>{(pack.weight)+(product.weight)} {t("orders/manorder:box")}</p>
               </div>
             </div>
             {/* //! elgun kilogram silindi ***     */}
@@ -77,7 +78,7 @@ const PackageBottom = () => {
               </div>
               <div className="bottom-right">
                 <p>{t("orders/manorder:tworth")}:</p>
-                <p>1 {t("orders/manorder:box")}</p>
+                <p>{product.unitprice*product.count} {t("orders/manorder:box")}</p>
               </div>
             </div>
           </div>
