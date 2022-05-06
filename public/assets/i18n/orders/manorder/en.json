@@ -37,6 +37,7 @@
   "tamount":"Total Amount",
   "tvolume":"Total Volume",
   "tweight":"Total Weight",
+  "prweight":"Pricing Weight",
   "tworth":"Total Worth",
   "getaquote":"Get a Quote",
   "box":"box",

@@ -36,6 +36,7 @@
   "tamount":"Toplam Tutar",
   "tvolume":"Toplam Hacim",
   "tweight":"Toplam Ağırlık",
+  "prweight":"Fiyatlandırma Ağırlığı",
   "tworth":"Toplam Değer",
   "getaquote":"Fiyat teklifi al",
   "box":"kutu",

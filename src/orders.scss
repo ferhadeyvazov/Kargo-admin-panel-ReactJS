@@ -633,6 +633,7 @@
                         align-items: center;
                         padding-left: 4px;
                         justify-content: center;
+                        margin: 0 auto;
                       }
 
                       .product-size {
@@ -814,6 +815,8 @@
                     font-size: 12px;
                     line-height: 18px;
                     color: #405982;
+                    display: flex;
+                    align-items: center;
 
                     @media (max-width: 550px) {
                       &:nth-child(2) {
