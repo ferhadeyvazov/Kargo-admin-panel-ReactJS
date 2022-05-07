@@ -4,19 +4,6 @@ import CommonInfoImage from "../../assets/ordersIcons/commonInfo.svg";
 import { useTranslation } from "react-i18next";
 const CommonInformation = ({com,Common}) => {
   const {t}=useTranslation(["orders","orders/manorder"])
-//   const [com, setCom] = useState({
-//       iosnum: "",
-//       vattnum: "",
-//       currency: "",
-//       storage: "",
-// });
-// function Common(e){
-// const newdata={...com}
-// newdata[e.target.id] = e.target.value;
-// setCom(newdata);
-// console.log(newdata);
-// } 
-
 
   return (
     <>
